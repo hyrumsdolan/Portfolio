@@ -1,8 +1,9 @@
 /* Fixed header styling */
 :root {
-    --header-width: 75px; /* Initial width of the header */
-  }
-  
+    --header-width: 75px;
+    /* Initial width of the header */
+}
+
 
 header {
     width: var(--header-width);
@@ -25,8 +26,8 @@ header {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-  
-  
+
+
 
 
 
@@ -48,9 +49,8 @@ header {
 }
 
 /* Color change on hover and focus for central icons */
-.central-icons a:hover,
-.central-icons a:focus {
-    color: white;
+.central-icons a:hover{
+    color: rgb(181, 152, 182);
 }
 
 /* Social icons layout and styling */
@@ -69,7 +69,7 @@ header {
 
 /* Color change on hover and focus for social icons */
 .social-icons a:hover {
-    color: white;
+    color: rgb(181, 152, 182);
 }
 
 /* Hero section layout and background */
@@ -87,22 +87,23 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-  }
-  
-  .portfolio-item {
+}
+
+.portfolio-item {
     position: relative;
     margin: 15px;
     width: calc(50% - 30px);
     justify-content: space-around;
-  }
-  
-  .portfolio-item img {
+}
+
+.portfolio-item img {
     width: 100%;
     aspect-ratio: 2/1;
-    border-radius: 50px; /* Rounded corners */
-  }
-  
-  .portfolio-text {
+    border-radius: 50px;
+    /* Rounded corners */
+}
+
+.portfolio-text {
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -110,22 +111,22 @@ header {
     font-size: 20px;
     transition: opacity 0.3s ease-in-out;
     opacity: 0.7;
-  }
-  
-  /* Hover Effects */
-  .portfolio-item:hover img {
-    filter: brightness(0.5);
-  }
-  
-  .portfolio-item:hover .portfolio-text {
-    opacity: 1;
-  }
-  
-  .main-content {
-    margin-left: var(--header-width);
-  }
+}
 
-  .contact-section {
+/* Hover Effects */
+.portfolio-item:hover img {
+    filter: brightness(0.5);
+}
+
+.portfolio-item:hover .portfolio-text {
+    opacity: 1;
+}
+
+.main-content {
+    margin-left: var(--header-width);
+}
+
+.contact-section {
     display: flex;
     justify-content: space-between;
     background: url('../Images/Hero-Image.png') no-repeat center center;
@@ -136,7 +137,7 @@ header {
 
 .contact-info {
     display: flex;
-    flex: 3;  /* Adjust width proportion here */
+    flex: 3; /* Adjust width proportion here */
     padding: 20px;
     color: white;
     justify-content: center;
@@ -145,93 +146,88 @@ header {
 }
 
 .contact-form {
-    display: flex;
-    flex: 5;  /* Adjust width proportion here */
-    padding: 20px;
+    display: flex;  /* Add this line */
+    flex: 5;
+    padding: 40px;
     color: white;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: rgba(82, 82, 82, 0.515);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+    max-width: 600px;
+    text-align: center;
+    margin: 5%;
 }
 
-/* Contact Form */
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);  /* Black with 50% opacity */
-    padding: 20px;
-    border-radius: 10px;  /* Rounded corners */
-    width: 80%;  /* Adjust width as needed */
-    margin: 0 auto;
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
 }
 
-/* Input Fields */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    box-sizing: border-box;
-    background-color: slategray;  /* Light Gray */
-    border: 1px solid black;  /* Gray border */
-    color: white;  /* Text Color */
-    width: 100%;
-    height: fit-content;
-    height: 40px;
-    padding: 15px;
-}
-.contact-form input[type="text"]:focus,
-.contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: #0099cc;  /* Blue */
-    outline: none;
-}
-.contact-form textarea {
-    width: 100%;  /* Full width */
-    padding: 15px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #ab7abd;
-    border-radius: 4px;
-    height: 100px;  /* Adjust based on your needs */
-    resize: vertical;  /* Allow vertical resizing */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(181, 152, 182);
 }
 
-/* Placeholder Color */
-.contact-form input[type="text"]::placeholder,
-.contact-form input[type="email"]::placeholder,
-.contact-form textarea::placeholder {
-    color: white;  /* Placeholder Text Color */
-}
-
-/* For browser compatibility */
-.contact-form input[type="text"]::-webkit-input-placeholder,
-.contact-form input[type="email"]::-webkit-input-placeholder,
-.contact-form textarea::-webkit-input-placeholder {
-    color: white;
-}
-
-.contact-form input[type="text"]:-ms-input-placeholder,
-.contact-form input
-
-
-/* Submit Button */
-.contact-form input[type="submit"] {
-    background-color: #ab7abd !important;  /* Green */
-    color: white;
-    padding: 15px 20px;
+input,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: rgb(181, 152, 182);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-/* Hover effect for Submit Button */
-.contact-form input[type="submit"]:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: black;
 }
 
-
-
-  @media screen and (max-width: 768px) {
-    .portfolio-section{
-      width: 100%;
-    }
-    
+.form-wrapper {
+    width: 100%;  /* or set to whatever you prefer */
+    max-width: 600px;  /* or set to whatever you prefer */
+    margin: 0 auto;  /* this centers the form */
   }
+  
+h2 {
+    margin-bottom: 40px;
+    font-weight: normal;
+    color: rgb(181, 152, 182);
+    font-size: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+}
