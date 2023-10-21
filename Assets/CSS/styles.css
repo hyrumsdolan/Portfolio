@@ -1,1 +1,237 @@
-/* CSS STYLE */
+/* Fixed header styling */
+:root {
+    --header-width: 75px; /* Initial width of the header */
+  }
+  
+
+header {
+    width: var(--header-width);
+    position: fixed;
+    height: 100%;
+    width: 75px;
+    background-color: #121212;
+    color: white;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+/* Style for profile picture */
+.profile-pic {
+    position: relative;
+}
+
+.profile-pic img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+  
+  
+
+
+
+/* Central icons layout and styling */
+.central-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.central-icons a {
+    display: block;
+    margin: 50px;
+    font-size: 35px;
+    color: darkslategray;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Color change on hover and focus for central icons */
+.central-icons a:hover,
+.central-icons a:focus {
+    color: white;
+}
+
+/* Social icons layout and styling */
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-icons a {
+    font-size: 35px;
+    color: darkslategrey;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Color change on hover and focus for social icons */
+.social-icons a:hover {
+    color: white;
+}
+
+/* Hero section layout and background */
+.hero {
+    background: url('../Images/Hero-Image.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* Portfolio Section */
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    margin: 15px;
+    width: calc(50% - 30px);
+    justify-content: space-around;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 50px; /* Rounded corners */
+  }
+  
+  .portfolio-text {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: white;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+  
+  /* Hover Effects */
+  .portfolio-item:hover img {
+    filter: brightness(0.5);
+  }
+  
+  .portfolio-item:hover .portfolio-text {
+    opacity: 1;
+  }
+  
+  .main-content {
+    margin-left: var(--header-width);
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    background: url('../Images/Hero-Image.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex: 3;  /* Adjust width proportion here */
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex: 5;  /* Adjust width proportion here */
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);  /* Black with 50% opacity */
+    padding: 20px;
+    border-radius: 10px;  /* Rounded corners */
+    width: 80%;  /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+/* Input Fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    box-sizing: border-box;
+    background-color: slategray;  /* Light Gray */
+    border: 1px solid black;  /* Gray border */
+    color: white;  /* Text Color */
+    width: 100%;
+    height: fit-content;
+    height: 40px;
+    padding: 15px;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #0099cc;  /* Blue */
+    outline: none;
+}
+.contact-form textarea {
+    width: 100%;  /* Full width */
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ab7abd;
+    border-radius: 4px;
+    height: 100px;  /* Adjust based on your needs */
+    resize: vertical;  /* Allow vertical resizing */
+}
+
+/* Placeholder Color */
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    color: white;  /* Placeholder Text Color */
+}
+
+/* For browser compatibility */
+.contact-form input[type="text"]::-webkit-input-placeholder,
+.contact-form input[type="email"]::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+    color: white;
+}
+
+.contact-form input[type="text"]:-ms-input-placeholder,
+.contact-form input
+
+
+/* Submit Button */
+.contact-form input[type="submit"] {
+    background-color: #ab7abd !important;  /* Green */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for Submit Button */
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .portfolio-section{
+      width: 100%;
+    }
+    
+  }

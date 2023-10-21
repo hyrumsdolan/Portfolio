@@ -1,48 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
-  <link rel="stylesheet" href="./Assets/CSS/reset.css">
-  <link rel="stylesheet" href="./Assets/CSS/styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
+<header>
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+        <img src="./Assets/Images/IMG_1082-removebg-preview (1).png" alt="Hyrum Dolan">
+    </div>
+
+    <!-- Central Icons -->
+    <div class="central-icons">
+        <a href="#home"><i class="fas fa-home"></i></a>
+        <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+        <a href="#contact"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://github.com/hyrumsdolan" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</header>
+
 <body>
-  <!-- Header -->
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- Body -->
-  <main>
-    <!-- Home -->
-    <section id="home">
-      <h2>Home</h2>
-      <p>Homie</p>
-    </section>
+    <div class="main-content">
+        <!-- Hero Image -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hyrum Dolan</h1>
+                <p>His nerd projects</p>
+                
+            </div>
+        </div>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>my things</p>
-    </section>
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="portfolio-section">
+            
+              <div class="portfolio-item">
+                <a href="https://linktoproject.com">
+                <img src="./Assets/Images/Hero-Image.png" alt="Project 1">
+                <p class="portfolio-text">Challenge Week 1</p>
+                </a>
+              </div>
+            
+          
+          
+              <div class="portfolio-item">
+                <a href="https://linktoproject.com">
+                <img src="./Assets/Images/Hero-Image.png" alt="Project 2">
+                <p class="portfolio-text">Literally just this site</p>
+                </a>
+              </div>
+            
+          
+              <div class="portfolio-item">
+                <a href="https://linktoproject.com">
+                <img src="./Assets/Images/Hero-Image.png" alt="Project 1">
+                <p class="portfolio-text">Coming Soon</p>
+                </a>
+              </div>
+          
+              <div class="portfolio-item">
+                <a href="https://linktoproject.com">
+                <img src="./Assets/Images/Hero-Image.png" alt="Project 2">
+                <p class="portfolio-text">Coming Soon</p>
+                </a>
+              </div>
+        </div>
+    
+            
+        <!-- Contact Section -->
+        <div id="contact" class="contact-section">
+            <div class="contact-info">
+                <div>
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out!</p>
+                </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:info@example.com">info@example.com</a></p>
-    </section>
-  </main>
-  
-  <!-- Footer -->
-  <footer>
-    <p>&copy; I'm a foot</p>
-  </footer>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/maylqzqk" method="POST">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="_replyto" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+            
+    
+    
+    
 </body>
 </html>
