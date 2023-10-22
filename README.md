@@ -5,7 +5,7 @@ This is a simple website using some techniques learned through the first two wee
 
 # Snapshot of Website
 The sidebar header does funtion properly on the website, but looks awkward in on the picture.
-![Site Snapshot](./Assets/Images/Website_Snapshot_for_README.jpeg)
+![Site Snapshot](./Assets/Images/Snapshot_README.jpeg)
 
 # Link to Deployed Website
 https://hyrumsdolan.github.io/Portfolio/
