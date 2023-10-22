@@ -1,118 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./Assets/CSS/reset.css">
-    <link rel="stylesheet" href="./Assets/CSS/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./Assets/CSS/reset.css">
+  <link rel="stylesheet" href="./Assets/CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<header>
-    <!-- Profile Picture -->
-    <div class="profile-pic">
-        <img src="./Assets/Images/IMG_1082-removebg-preview (1).png" alt="Hyrum Dolan">
-    </div>
-
-    <!-- Central Icons -->
-    <div class="central-icons">
-        <a href="#home"><i class="fas fa-home"></i></a>
-        <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
-        <a href="#contact"><i class="fas fa-envelope"></i></a>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-        <a href="https://github.com/hyrumsdolan" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-</header>
-
 <body>
-    <div id="home" class="main-content">
-        <!-- Hero Image -->
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Hyrum Dolan</h1>
-                <p>His nerd projects</p>
+  <!-- Header: Profile, Nav & Social -->
+  <header>
+    <div class="profile-pic">
+      <img src="./Assets/Images/IMG_1082-removebg-preview (1).png" alt="Hyrum Dolan">
+    </div>
+    <div class="central-icons">
+      <a href="#home"><i class="fas fa-home"></i></a>
+      <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+      <a href="#contact"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/hyrumsdolan" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
 
-            </div>
+  <!-- Main Content -->
+  <div id="home" class="main-content">
+    
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Hyrum</h1>
+        <p>and his nerd projects</p>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="portfolio-section">
+      <!-- Portfolio Items -->
+      <div class="portfolio-item"><a href="https://hyrumsdolan.github.io/UofU-Bootcamp-W1C/" target="_blank"><img src="./Assets/Images/Project 1.png" alt="Project 1"><p class="portfolio-text">Challenge Week 1</p></a></div>
+      <div class="portfolio-item"><a href="https://hyrumsdolan.github.io/Portfolio/" target="_blank"><img src="./Assets/Images/Portfolio Site.png" alt="Project 2"><p class="portfolio-text">Press this to understand "recursion".</p></a></div>
+      <div class="portfolio-item"><a href="https://github.com/hyrumsdolan/AI-Pokemon_battler" target="_blank"><img src="./Assets/Images/PokeGPT.png" alt="Project 1"><p class="portfolio-text">PokeGPT</p></a></div>
+      <div class="portfolio-item"><a href="https://puginarug.com/" target="_blank"><img src="./Assets/Images/Space Pig.png" alt="Project 2"><p class="portfolio-text">Coming Soon (this links to a website that is not mine)</p></a></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+      <!-- Contact Info & Form -->
+      <div class="contact-info">
+        <div>
+        <h2>Contact Me</h2>
+        <p>i don't really wanna be contacted. So just click the submit button for a JAM!</p>
         </div>
-
-        <!-- Portfolio Section -->
-        <div id="portfolio" class="portfolio-section">
-
-            <div class="portfolio-item">
-                <a href="https://linktoproject.com">
-                    <img src="./Assets/Images/Hero-Image.png" alt="Project 1">
-                    <p class="portfolio-text">Challenge Week 1</p>
-                </a>
-            </div>
-
-
-
-            <div class="portfolio-item">
-                <a href="https://linktoproject.com">
-                    <img src="./Assets/Images/Hero-Image.png" alt="Project 2">
-                    <p class="portfolio-text">Literally just this site</p>
-                </a>
-            </div>
-
-
-            <div class="portfolio-item">
-                <a href="https://linktoproject.com">
-                    <img src="./Assets/Images/Hero-Image.png" alt="Project 1">
-                    <p class="portfolio-text">Coming Soon</p>
-                </a>
-            </div>
-
-            <div class="portfolio-item">
-                <a href="https://linktoproject.com">
-                    <img src="./Assets/Images/Hero-Image.png" alt="Project 2">
-                    <p class="portfolio-text">Coming Soon</p>
-                </a>
-            </div>
+     </div>
+      <div class="contact-form">
+        <div class="form-wrapper">
+          <!-- Form Fields -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <a href="https://www.spacejam.com/1996/" target="blank"><button>Submit</button></a>
+          </div>
         </div>
-
-
-        <!-- Contact Section -->
-        <div id="contact" class="contact-section">
-            <div class="contact-info">
-                <div>
-                    <h2>Contact Me</h2>
-                    <p>pssst... that message doesn't go anywhere</p>
-                </div>
-
-            </div>
-            <div class="contact-form">
-                
-                <div class="form-wrapper">
-                <form action="https://google.com" method="post">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-                </div>
-            </div>
-        </div>
-
-
-
-
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
